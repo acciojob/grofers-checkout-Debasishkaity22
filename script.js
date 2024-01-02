@@ -12,8 +12,10 @@ price.forEach(function(e){
 });
 let tr1=document.createElement("tr");
 let td1=document.createElement("td");
-td1.innerText="Total Price: "+total;
- tr1.appendChild(td1);
+let td2=document.createElement("td");
+td1.innerText="Total Price";
+td2.innerText=total;
+ tr1.append(td1,td2);
  table.appendChild(tr1);
 };
 
